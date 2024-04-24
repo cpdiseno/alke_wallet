@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Alke Wallet</string>
+    <string name="texto_bienvenida">El lugar más seguro para tu dinero</string>
+    <string name="btn_crear_cuenta">Crear cuenta nueva</string>
+    <string name="btn_tienes_cuenta">Ya tienes cuenta</string>
+    <string name="title_login_page">¡Logea y empeza a tranferir!</string>
+    <string name="ingresa_tu_email">Ingresa tu email</string>
+    <string name="Email">Email</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="ingresa_tu_contraseña">Ingresa tu contraseña</string>
+    <string name="olvidaste_tu_contrasena">¿Olvidaste tu contraseña?</string>
+    <string name="btn_login">Login</string>
+    <string name="txt_crear_cta">Crear una nueva cuenta</string>
+    <string name="content_description_start_icon">Ver</string>
+</resources>
