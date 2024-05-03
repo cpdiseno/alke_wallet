@@ -2,7 +2,7 @@
     <string name="app_name">Alke Wallet</string>
     <string name="texto_bienvenida">El lugar más seguro para tu dinero</string>
     <string name="btn_crear_cuenta">Crear cuenta nueva</string>
-    <string name="btn_tienes_cuenta">Ya tienes cuenta</string>
+    <string name="txt_ya_tienes_cuenta">Ya tienes cuenta</string>
     <string name="title_login_page">¡Logea y empeza a tranferir!</string>
     <string name="ingresa_tu_email">Ingresa tu email</string>
     <string name="Email">Email</string>
@@ -12,4 +12,17 @@
     <string name="btn_login">Login</string>
     <string name="txt_crear_cta">Crear una nueva cuenta</string>
     <string name="content_description_start_icon">Ver</string>
+    <string name="alt_logo">logo de la aplicacion</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="logo_alke_wallet">Logo Alke Wallet</string>
+    <string name="registrarse_y_empezar_a_transferir">Registrarse y empezar a transferir</string>
+    <string name="ya_tienes_una_cuenta">¿Ya tienes una cuenta?</string>
+    <string name="crear_cuenta">Crear Cuenta</string>
+    <string name="nombre">Nombre</string>
+    <string name="ingresar_nombre">Ingresar nombre</string>
+    <string name="Apellido">Apellido</string>
+    <string name="ingresar_apellido">Ingresar apellido</string>
+    <string name="reingresar_contrase_a">Reingresar contraseña</string>
+    <string name="registrarse">Crear cuenta</string>
 </resources>

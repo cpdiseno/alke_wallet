@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/background_login"
+    android:orientation="vertical"
+    tools:context=".fragments.Login_Page">
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/registrarse_y_empezar_a_transferir"
+        android:textAlignment="viewStart"
+        android:textColor="@color/negro"
+        android:textSize="32sp"
+        android:typeface="normal"
+        android:visibility="visible"
+        android:layout_marginEnd="40dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/form_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/nombre"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jua"
+        tools:ignore="DuplicateIds" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style = "@style/TextInputstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background=""
+        android:textColorHint="@color/gristexto"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/background_imput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:hint="@string/ingresar_nombre"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/form_apellido"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Apellido"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jua"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style = "@style/TextInputstyle"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/gristexto"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/background_imput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:hint="@string/ingresar_apellido" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/form_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Email"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jua"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/gristexto"
+        app:cornerRadius="10dp"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:background="@drawable/background_imput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:hint="@string/ingresa_tu_email"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/form_contrasena"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/Contraseña"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jua"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/gristexto"
+        app:endIconMode="password_toggle"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:hint="@string/ingresa_tu_contraseña"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/form_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/reingresar_contrase_a"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/jua"
+        tools:ignore="DuplicateIds" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/form_reingresar_contrasena"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="10dp"
+        android:textColorHint="@color/gristexto"
+        app:endIconMode="password_toggle"
+        android:background="@color/white"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/jua"
+            android:hint="@string/reingresar_contrase_a"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btn_crearcuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+       android:layout_marginEnd="30dp"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="@color/azul"
+        android:fontFamily="@font/jua"
+        android:text="@string/registrarse"
+        app:cornerRadius="10dp"
+
+        />
+
+    <Button
+        android:id="@+id/btn_YaTienesCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:fontFamily="@font/jua"
+        android:text="@string/txt_ya_tienes_cuenta"
+        android:textColor="@color/azul"
+        app:cornerRadius="10dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginTop="20dp"
+         />
+
+
+
+</LinearLayout>

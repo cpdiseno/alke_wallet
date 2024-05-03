@@ -12,15 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AlkeWallet"
         tools:targetApi="31">
+
         <activity
-            android:name=".LoginPage"
-            android:exported="false" />
-        <activity
-            android:name=".LoguinSignupActivity"
-            android:exported="false" />
-        <activity
-            android:name=".SplashScreenActivity"
-            android:exported="true">
+            android:name=".MainActivity"
+            android:exported="true"
+            >
+
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
