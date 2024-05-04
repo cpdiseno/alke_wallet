@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".fragments.request_money">
+
+
+    <TextView
+        android:id="@+id/textView6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_ingresar_dinero"
+        android:fontFamily="@font/jua"
+        android:textSize="20sp"
+        android:textAlignment="center"
+        android:layout_marginTop="40dp"
+        />
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="40dp">
+
+            <ImageView
+                android:id="@+id/profile_reem_ingresardinero"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:src="@drawable/profile_reem"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/nombre_usuario_reem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginBottom="4dp"
+                android:fontFamily="@font/jua"
+                android:text="@string/nombre"
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/fecha_reem"
+                app:layout_constraintStart_toStartOf="@+id/profile_reem_ingresardinero" />
+
+            <TextView
+                android:id="@+id/fecha_reem"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:alpha="0.5"
+                android:fontFamily="@font/jua"
+                android:text="@string/email"
+                android:textSize="12sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/nombre_usuario_reem"
+                app:layout_constraintTop_toTopOf="@+id/nombre_usuario_reem" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/form_nombre"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/cantidad_a_ingresar"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jua"
+        tools:ignore="DuplicateIds" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:background=""
+        android:textColorHint="@color/celeste"
+
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background_imput_border_blue"
+            android:fontFamily="@font/jua"
+            android:hint="@string/cantidad_a_ingresar_monto"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <TextView
+        android:id="@+id/form_nombre_ingresardinero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/notas_de_transferencia"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/jua"
+         />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:textColorHint="@color/negro"
+
+
+        app:boxBackgroundMode="filled">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/background_imput"
+            android:fontFamily="@font/jua"
+            android:hint="@string/placeholder_notas_de_transferencia"
+            android:textSize="14sp"
+
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+
+</LinearLayout>

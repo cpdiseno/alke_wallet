@@ -38,7 +38,6 @@
         tools:ignore="DuplicateIds" />
 
     <com.google.android.material.textfield.TextInputLayout
-        style = "@style/TextInputstyle"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_marginStart="30dp"
