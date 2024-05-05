@@ -37,16 +37,22 @@
     <string name="btn_ingresar_dinero">Ingresar dinero</string>
     <string name="ultimas_transacciones">Últimas transacciones</string>
     <string name="no_hay_transacciones">¡No hay transacciones registradas!</string>
-    <string name="email">reem_1993@gmail.com</string>
+    <string name="email">usuario@gmail.com</string>
     <string name="cantidad_a_ingresar">Cantidad a ingresar</string>
+    <string name="cantidad_a_transferir">Cantidad a transferir</string>
     <string name="cantidad_a_ingresar_monto">20.00</string>
     <string name="notas_de_transferencia">Notas de transferencia</string>
     <string name="placeholder_notas_de_transferencia">Agregar notas de transferencia(opcional)</string>
-
-
-
-
-
+    <string name="enviar_dinero">Enviar dinero</string>
+    <string name="inicial">Y</string>
+    <string name="mi">Mi</string>
+    <string name="perfil">Mi perfil</string>
+    <string name="amanda">Amanda Alkemy</string>
+    <string name="alkemy">Alkemy</string>
+    <string name="mi_informaci_n">Mi Información ></string>
+    <string name="mis_tarjetas">Mis tarjetas ></string>
+    <string name="opciones">Opciones ></string>
+    <string name="centro_de_ayuda">Centro de ayuda ></string>
 
 
 </resources>

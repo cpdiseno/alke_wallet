@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.homePage">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/gristexto"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_percent="0.31" />
+
+
+    <ImageView
+        android:id="@+id/miperfil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:contentDescription="@string/description"
+        android:src="@drawable/miperfil"
+        app:layout_constraintBottom_toTopOf="@+id/scrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/baseline_mode_edit_outline_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/text_titulo_miperfil"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/text_titulo_miperfil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="35dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="16dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/perfil"
+        android:textColor="@color/negro"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/miperfil"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/text_usuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:fontFamily="@font/jua"
+        android:text="@string/amanda"
+        android:textColor="@color/negro"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/miperfil"
+        app:layout_constraintStart_toStartOf="@+id/miperfil"
+        app:layout_constraintTop_toBottomOf="@+id/miperfil" />
+
+
+
+    <ScrollView
+        android:id="@+id/scrollView2"
+        android:layout_width="match_parent"
+        android:layout_height="665dp"
+        android:background="@color/white"
+        android:layout_marginTop="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+                <Button
+                    android:id="@+id/button_enviar_dinero"
+                    style="@style/Widget.Material3.Button.TonalButton.Icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:backgroundTint="@color/gris"
+                    android:fontFamily="@font/jua"
+                    android:text="@string/mi_informaci_n"
+                    android:textAlignment="textStart"
+                    android:textSize="14sp"
+                    app:cornerRadius="15dp"
+                    app:icon="@drawable/baseline_person_24"
+                    app:iconPadding="15dp"
+                    />
+
+            <Button
+                android:id="@+id/button_mistarjetas"
+                style="@style/Widget.Material3.Button.TonalButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/gris"
+                android:fontFamily="@font/jua"
+                android:text="@string/mis_tarjetas"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/baseline_credit_card_24"
+                app:iconPadding="15dp"
+                />
+
+            <Button
+                android:id="@+id/button_opciones"
+                style="@style/Widget.Material3.Button.TonalButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/gris"
+                android:fontFamily="@font/jua"
+                android:text="@string/opciones"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/baseline_settings_24"
+                app:iconPadding="15dp"
+                />
+
+            <Button
+                android:id="@+id/button_ayuda"
+                style="@style/Widget.Material3.Button.TonalButton.Icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="15dp"
+                android:backgroundTint="@color/gris"
+                android:fontFamily="@font/jua"
+                android:text="@string/centro_de_ayuda"
+                android:textAlignment="textStart"
+                android:textSize="14sp"
+                app:cornerRadius="15dp"
+                app:icon="@drawable/baseline_message_24"
+                app:iconPadding="15dp"
+                />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

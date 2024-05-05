@@ -10,13 +10,17 @@ import android.view.ViewGroup;
 
 import pena.camila.alkewallet.R;
 
-public class homePage extends Fragment {
+public class profile_page extends Fragment {
+
+    public profile_page() {
+        // Required empty public constructor
+    }
+
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         if (getArguments() != null) {
-
         }
     }
 
@@ -24,6 +28,6 @@ public class homePage extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_page, container, false);
+        return inflater.inflate(R.layout.fragment_profile_page, container, false);
     }
 }
