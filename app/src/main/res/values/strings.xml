@@ -49,10 +49,10 @@
     <string name="perfil">Mi perfil</string>
     <string name="amanda">Amanda Alkemy</string>
     <string name="alkemy">Alkemy</string>
-    <string name="mi_informaci_n">Mi Información ></string>
-    <string name="mis_tarjetas">Mis tarjetas ></string>
-    <string name="opciones">Opciones ></string>
-    <string name="centro_de_ayuda">Centro de ayuda ></string>
+    <string name="mi_informaci_n">Mi Información</string>
+    <string name="mis_tarjetas">Mis tarjetas</string>
+    <string name="opciones">Opciones</string>
+    <string name="centro_de_ayuda">Centro de ayuda</string>
 
 
 </resources>
