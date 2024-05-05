@@ -42,9 +42,7 @@
         android:layout_height="match_parent"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background=""
-        android:textColorHint="@color/gristexto"
-        >
+        android:textColorHint="@color/gristexto">
 
         <com.google.android.material.textfield.TextInputEditText
             android:background="@drawable/background_imput"

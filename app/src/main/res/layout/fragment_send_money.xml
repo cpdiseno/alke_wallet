@@ -119,10 +119,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:background=""
-        android:textColorHint="@color/verde"
-
-        >
+        android:textColorHint="@color/verde">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
