@@ -42,14 +42,17 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:textColorHint="@color/gristexto">
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/gristexto"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@drawable/background_imput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/ingresar_nombre" />
+                android:hint="@string/ingresar_nombre"
+                />
         </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -68,7 +71,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:textColorHint="@color/gristexto">
+            android:layout_marginTop="10dp"
+            android:textColorHint="@color/gristexto"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@drawable/background_imput"
@@ -92,8 +97,9 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
+            android:layout_marginTop="10dp"
             android:textColorHint="@color/gristexto"
-            app:cornerRadius="10dp">
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@drawable/background_imput"
@@ -120,7 +126,8 @@
             android:layout_marginEnd="30dp"
             android:layout_marginTop="10dp"
             android:textColorHint="@color/gristexto"
-            app:endIconMode="password_toggle">
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@drawable/background_imput"
@@ -137,8 +144,7 @@
             android:text="@string/reingresar_contrase_a"
             android:layout_marginStart="30dp"
             android:layout_marginTop="20dp"
-            android:fontFamily="@font/jua"
-            tools:ignore="DuplicateIds" />
+            android:fontFamily="@font/jua" />
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/form_reingresar_contrasena"
@@ -146,16 +152,18 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginTop="8dp"
             android:textColorHint="@color/gristexto"
-            app:endIconMode="password_toggle">
+            app:endIconMode="password_toggle"
+            app:hintEnabled="false">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:background="@drawable/background_imput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
-                android:hint="@string/reingresar_contrase_a" />
+                android:hint="@string/reingresar_contrase_a"
+                 />
         </com.google.android.material.textfield.TextInputLayout>
 
         <Button
