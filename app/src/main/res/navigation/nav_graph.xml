@@ -57,6 +57,9 @@
         <action
             android:id="@+id/action_signup_to_emptyCase"
             app:destination="@id/emptyCase" />
+        <action
+            android:id="@+id/action_signup_to_login_Page"
+            app:destination="@id/login_Page" />
     </fragment>
     <fragment
         android:id="@+id/homePage"

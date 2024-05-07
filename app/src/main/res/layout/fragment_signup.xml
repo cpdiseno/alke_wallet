@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/background_login"
@@ -28,6 +27,7 @@
             android:typeface="normal"
              />
 
+        <!-- ********************* NOMBRE ***********************-->
         <TextView
             android:id="@+id/form_nombre"
             android:layout_width="wrap_content"
@@ -38,16 +38,18 @@
             android:fontFamily="@font/jua" />
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_nombre"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="10dp"
-            android:textColorHint="@color/gristexto"
-            app:hintEnabled="false">
+            android:textColorHint="@color/gristexto">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:background="@drawable/background_imput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
@@ -56,7 +58,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
 
-
+        <!-- ********************* APELLIDO ***********************-->
         <TextView
             android:id="@+id/form_apellido"
             android:layout_width="wrap_content"
@@ -67,22 +69,25 @@
             android:fontFamily="@font/jua"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_apellido"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="10dp"
-            android:textColorHint="@color/gristexto"
-            app:hintEnabled="false">
+            android:textColorHint="@color/gristexto">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:background="@drawable/background_imput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
                 android:hint="@string/ingresar_apellido" />
         </com.google.android.material.textfield.TextInputLayout>
 
+        <!-- ********************* EMAIL ***********************-->
         <TextView
             android:id="@+id/form_email"
             android:layout_width="wrap_content"
@@ -93,21 +98,28 @@
             android:fontFamily="@font/jua"/>
 
         <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/textInputLayout_email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="10dp"
             android:textColorHint="@color/gristexto"
-            app:hintEnabled="false">
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:background="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:background="@drawable/background_imput"
+
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
                 android:hint="@string/ingresa_tu_email" />
         </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <!-- ********************* CONTRASEÑA ***********************-->
 
         <TextView
             android:id="@+id/form_contrasena"
@@ -119,23 +131,27 @@
             android:fontFamily="@font/jua"/>
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/textInputLayout2"
+            android:id="@+id/textInputLayout_contrasena"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="10dp"
             android:textColorHint="@color/gristexto"
-            app:endIconMode="password_toggle"
-            app:hintEnabled="false">
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:background="@drawable/background_imput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
                 android:hint="@string/ingresa_tu_contraseña" />
         </com.google.android.material.textfield.TextInputLayout>
+
+
+        <!-- *********** REINGRESAR CONTRASEÑA ************-->
 
         <TextView
             android:id="@+id/form_reingresar_contraseña"
@@ -148,23 +164,25 @@
 
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/form_reingresar_contrasena"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            android:background="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginEnd="30dp"
             android:layout_marginTop="8dp"
             android:textColorHint="@color/gristexto"
-            app:endIconMode="password_toggle"
-            app:hintEnabled="false">
+            app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
-                android:background="@drawable/background_imput"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
                 android:hint="@string/reingresar_contrase_a"
                  />
         </com.google.android.material.textfield.TextInputLayout>
+
 
         <Button
             android:id="@+id/btn_crearcuenta"
