@@ -11,8 +11,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 import pena.camila.alkewallet.R;
 
@@ -38,7 +36,7 @@ public class LoginSignup extends Fragment {
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
 
-    Button YaTienesCuenta = view.findViewById(R.id.btn_YaTienesCuenta);
+    Button YaTienesCuenta = view.findViewById(R.id.yaTienesCuenta);
 
     YaTienesCuenta.setOnClickListener(v -> {
         Navigation.findNavController(v).navigate(R.id.login_Page);
