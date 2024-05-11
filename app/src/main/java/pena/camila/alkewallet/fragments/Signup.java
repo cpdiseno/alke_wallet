@@ -41,6 +41,12 @@ public class Signup extends Fragment {
         TienesCuenta.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.login_Page);
         });
+
+        Button CrearCuenta= view.findViewById(R.id.btn_crearcuenta);
+
+        CrearCuenta.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.emptyCase);
+        });
     }
 
 }

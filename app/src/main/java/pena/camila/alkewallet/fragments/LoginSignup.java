@@ -50,7 +50,5 @@ public class LoginSignup extends Fragment {
         });
 
 
-
-
     }
 }

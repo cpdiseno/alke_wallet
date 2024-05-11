@@ -17,11 +17,11 @@
         android:label="fragment_login_signup"
         tools:layout="@layout/fragment_login_signup" >
         <action
-            android:id="@+id/action_loginSignup_to_login_Page"
-            app:destination="@id/login_Page" />
-        <action
             android:id="@+id/action_loginSignup_to_signup"
             app:destination="@id/signup" />
+        <action
+            android:id="@+id/action_loginSignup_to_login_Page"
+            app:destination="@id/login_Page" />
     </fragment>
 
 
@@ -65,12 +65,23 @@
         android:id="@+id/homePage"
         android:name="pena.camila.alkewallet.fragments.homePage"
         android:label="fragment_home_page"
-        tools:layout="@layout/fragment_home_page" />
+        tools:layout="@layout/fragment_home_page" >
+        <action
+            android:id="@+id/action_homePage_to_request_money"
+            app:destination="@id/request_money" />
+        <action
+            android:id="@+id/action_homePage_to_send_money"
+            app:destination="@id/send_money" />
+    </fragment>
     <fragment
         android:id="@+id/emptyCase"
         android:name="pena.camila.alkewallet.fragments.emptyCase"
         android:label="fragment_empty_case"
-        tools:layout="@layout/fragment_empty_case" />
+        tools:layout="@layout/fragment_empty_case" >
+        <action
+            android:id="@+id/action_emptyCase_to_send_money"
+            app:destination="@id/send_money" />
+    </fragment>
     <fragment
         android:id="@+id/request_money"
         android:name="pena.camila.alkewallet.fragments.request_money"

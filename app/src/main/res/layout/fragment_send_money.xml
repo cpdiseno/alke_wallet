@@ -119,14 +119,16 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:textColorHint="@color/verde">
+        android:textColorHint="@color/verde"
+        app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/background_imput_border_green"
             android:fontFamily="@font/jua"
-            android:hint="@string/cantidad_a_ingresar_monto" />
+            android:hint="@string/cantidad_a_ingresar_monto"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
 
@@ -146,6 +148,7 @@
         android:layout_marginEnd="30dp"
         android:textColorHint="@color/gristexto"
         app:boxBackgroundMode="filled"
+        app:hintEnabled="false"
         >
 
         <com.google.android.material.textfield.TextInputEditText
@@ -154,7 +157,8 @@
             android:background="@drawable/background_imput"
             android:fontFamily="@font/jua"
             android:hint="@string/placeholder_notas_de_transferencia"
-            android:textSize="14sp" />
+            android:textSize="14sp"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
