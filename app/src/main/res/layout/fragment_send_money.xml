@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
     tools:context=".fragments.request_money">
@@ -15,14 +15,14 @@
         android:layout_marginTop="30dp"
         android:orientation="horizontal">
 
-
         <ImageView
-            android:id="@+id/flecha"
+            android:id="@+id/button_volver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:src="@drawable/baseline_arrow_back_24"
             android:layout_marginLeft="20dp"
-            android:layout_marginRight="50dp"/>
+            android:layout_marginRight="50dp"
+            android:src="@drawable/baseline_arrow_back_24" />
+
 
         <TextView
             android:id="@+id/textView7"
@@ -35,14 +35,14 @@
     </LinearLayout>
 
 
-
-
+    <!-- Divider -->
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
         android:layout_height="1dp"
         android:background="?android:attr/listDivider" />
 
+    <!-- Recipient Information -->
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -88,6 +88,7 @@
             android:textSize="14sp"
             app:layout_constraintBottom_toTopOf="@+id/fecha_y"
             app:layout_constraintStart_toStartOf="@+id/profile_destinatario_y" />
+
 
         <TextView
             android:id="@+id/fecha_y"
@@ -153,7 +154,7 @@
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="200dp"
+            android:layout_height="150dp"
             android:background="@drawable/background_imput"
             android:fontFamily="@font/jua"
             android:hint="@string/placeholder_notas_de_transferencia"
@@ -162,19 +163,17 @@
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button
-        android:id="@+id/button_enviar_dinero2"
+        android:id="@+id/btn_enviar_dinero"
         style="@style/Widget.Material3.Button.TonalButton.Icon"
-        android:layout_width="350dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:backgroundTint="@color/azul"
+        android:layout_width="250dp"
+        android:layout_height="50dp"
+        android:backgroundTint="@color/verde"
         android:fontFamily="@font/jua"
-        android:text="@string/btn_ingresar_dinero"
-        android:textColor="@color/white"
+        android:text="@string/btn_enviar_dinero"
         android:textSize="14sp"
         app:cornerRadius="8dp"
-        app:icon="@drawable/request_icon"
-        app:iconTint="@color/white"
+        app:icon="@drawable/send_icon"
+        android:layout_marginTop="20dp"
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

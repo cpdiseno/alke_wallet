@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
+    android:layout_height="wrap_content"
     android:background="@color/white"
     android:orientation="vertical"
     tools:context=".fragments.request_money">
@@ -17,7 +17,7 @@
 
 
         <ImageView
-            android:id="@+id/flecha"
+            android:id="@+id/_volver"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:src="@drawable/baseline_arrow_back_24"
@@ -106,7 +106,9 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
-        android:textColorHint="@color/celeste">
+        android:textColorHint="@color/celeste"
+        app:hintEnabled="false">
+
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -125,38 +127,41 @@
         android:fontFamily="@font/jua"
         android:text="@string/notas_de_transferencia" />
 
+
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/comentarios_transferencia"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:textColorHint="@color/gristexto"
-        app:boxBackgroundMode="filled"
-        >
+        android:background="@color/white">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="200dp"
-            android:background="@drawable/background_imput"
+            android:layout_height="120dp"
+            style="@style/TextInputstyle"
             android:fontFamily="@font/jua"
             android:hint="@string/placeholder_notas_de_transferencia"
-            android:paddingStart="10dp"
-            android:textSize="14sp" />
+            android:textColorHint="@color/gristexto"
+            />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <Button
-        android:id="@+id/button_ingresar_dinero"
-        style="@style/Widget.Material3.Button.TonalButton.Icon"
-        android:layout_width="345dp"
-        android:layout_height="50dp"
 
-        android:backgroundTint="@color/verde"
+    <Button
+        android:id="@+id/btn_ingresar_dinero"
+        style="@style/Widget.Material3.Button.TonalButton.Icon"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="@color/azul"
         android:fontFamily="@font/jua"
-        android:text="@string/btn_enviar_dinero"
+        android:text="@string/btn_ingresar_dinero"
+        android:textColor="@color/white"
         android:textSize="14sp"
         app:cornerRadius="8dp"
-        app:icon="@drawable/send_icon"
-        android:layout_marginTop="150dp"
+        app:icon="@drawable/request_icon"
+        app:iconTint="@color/white"
         android:layout_gravity="center_horizontal"/>
 
 </LinearLayout>

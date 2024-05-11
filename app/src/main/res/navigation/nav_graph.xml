@@ -72,6 +72,9 @@
         <action
             android:id="@+id/action_homePage_to_send_money"
             app:destination="@id/send_money" />
+        <action
+            android:id="@+id/action_homePage_to_profile_page"
+            app:destination="@id/profile_page" />
     </fragment>
     <fragment
         android:id="@+id/emptyCase"
@@ -86,12 +89,23 @@
         android:id="@+id/request_money"
         android:name="pena.camila.alkewallet.fragments.request_money"
         android:label="fragment_request_money"
-        tools:layout="@layout/fragment_request_money" />
+        tools:layout="@layout/fragment_request_money" >
+        <action
+            android:id="@+id/action_request_money_to_homePage"
+            app:destination="@id/homePage" />
+    </fragment>
     <fragment
         android:id="@+id/send_money"
         android:name="pena.camila.alkewallet.fragments.send_money"
         android:label="fragment_send_money"
-        tools:layout="@layout/fragment_send_money" />
+        tools:layout="@layout/fragment_send_money" >
+        <action
+            android:id="@+id/action_send_money_to_homePage"
+            app:destination="@id/homePage" />
+        <action
+            android:id="@+id/action_send_money_to_emptyCase"
+            app:destination="@id/emptyCase" />
+    </fragment>
     <fragment
         android:id="@+id/profile_page"
         android:name="pena.camila.alkewallet.fragments.profile_page"

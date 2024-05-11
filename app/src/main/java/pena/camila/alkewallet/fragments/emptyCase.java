@@ -29,14 +29,18 @@ public class emptyCase extends Fragment {
         // Inflate the layout for this fragment
         return inflater.inflate(R.layout.fragment_empty_case, container, false);
     }
-    @Override
-    public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
-        super.onViewCreated(view, savedInstanceState);
 
-    Button TransferirDinero= view.findViewById(R.id.button_enviar_dinero);
 
-        TransferirDinero.setOnClickListener(v -> {
-        Navigation.findNavController(v).navigate(R.id.send_money);
-    });
+        @Override
+        public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
+            super.onViewCreated(view, savedInstanceState);
+
+
+            Button enviardinero = view.findViewById(R.id.button_enviar_dinero);
+
+            enviardinero.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.send_money);
+            });
 }
+
 }

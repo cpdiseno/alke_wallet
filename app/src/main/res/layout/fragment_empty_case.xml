@@ -144,7 +144,7 @@
                     app:icon="@drawable/send_icon" />
 
                 <Button
-                    android:id="@+id/button_ingresar_dinero"
+                    android:id="@+id/btn_enviar_dinero"
                     style="@style/Widget.Material3.Button.TonalButton.Icon"
                     android:layout_width="165dp"
                     android:layout_height="50dp"
