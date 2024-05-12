@@ -8,34 +8,37 @@
     android:orientation="vertical"
     tools:context=".fragments.request_money">
 
-
     <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:layout_marginTop="30dp"
-        android:orientation="horizontal">
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+       android:layout_gravity="center"
+       >
 
         <ImageView
             android:id="@+id/button_volver"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="20dp"
-            android:layout_marginRight="50dp"
-            android:src="@drawable/baseline_arrow_back_24" />
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:src="@drawable/baseline_arrow_back_24"
+         />
 
 
         <TextView
             android:id="@+id/textView7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:textAlignment="textStart"
             android:fontFamily="@font/jua"
             android:text="@string/enviar_dinero"
-            android:textSize="20sp" />
+            android:layout_gravity="center_vertical"
+            android:textSize="20sp"
+            />
 
     </LinearLayout>
 
-
-    <!-- Divider -->
+    <!-- linea horizontal -->
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
