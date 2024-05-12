@@ -90,6 +90,9 @@
         <action
             android:id="@+id/action_emptyCase_to_send_money"
             app:destination="@id/send_money" />
+        <action
+            android:id="@+id/action_emptyCase_to_request_money"
+            app:destination="@id/request_money" />
     </fragment>
     <fragment
         android:id="@+id/request_money"

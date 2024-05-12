@@ -37,9 +37,15 @@ public class emptyCase extends Fragment {
 
 
             Button enviardinero = view.findViewById(R.id.button_enviar_dinero);
+            Button ingresardinero = view.findViewById(R.id.button_ingresar_dinero);
+
 
             enviardinero.setOnClickListener(v -> {
                 Navigation.findNavController(v).navigate(R.id.send_money);
+            });
+
+            ingresardinero.setOnClickListener(v -> {
+                Navigation.findNavController(v).navigate(R.id.request_money);
             });
 }
 

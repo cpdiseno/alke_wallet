@@ -28,7 +28,7 @@ public class send_money extends Fragment {
 
         //Elementos del diseño que tienen las acciones:
         ImageView flecha = view.findViewById(R.id.button_volver);
-        Button enviardinero = view.findViewById(R.id.btn_enviar_dinero);
+        Button enviardinero = view.findViewById(R.id.button_ingresar_dinero);
 
         // Set click listeners, a que pantalla dirigen los botones
         flecha.setOnClickListener(v -> {
