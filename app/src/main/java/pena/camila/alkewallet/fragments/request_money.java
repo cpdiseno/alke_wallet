@@ -28,7 +28,7 @@ public class request_money extends Fragment {
         View view = inflater.inflate(R.layout.fragment_request_money, container, false);
 
         //Elementos del diseño que tienen las acciones:
-        ImageView flecha = view.findViewById(R.id._volver);
+        ImageView flecha = view.findViewById(R.id.button_volver);
         Button ingresardinero = view.findViewById(R.id.btn_ingresar_dinero);
 
         // Set click listeners, a que pantalla dirigen los botones

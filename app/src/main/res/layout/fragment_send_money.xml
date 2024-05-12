@@ -10,7 +10,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="60dp"
+        android:layout_height="120dp"
        android:layout_gravity="center"
        >
 
@@ -21,6 +21,7 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:src="@drawable/baseline_arrow_back_24"
+            android:contentDescription="@string/description"
          />
 
 
@@ -29,7 +30,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="3"
-            android:textAlignment="textStart"
             android:fontFamily="@font/jua"
             android:text="@string/enviar_dinero"
             android:layout_gravity="center_vertical"
@@ -119,7 +119,7 @@
         tools:ignore="DuplicateIds" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
@@ -127,7 +127,7 @@
         app:hintEnabled="false">
 
         <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
+            android:layout_width="250dp"
             android:layout_height="wrap_content"
             android:background="@drawable/background_imput_border_green"
             android:fontFamily="@font/jua"
@@ -146,23 +146,24 @@
         android:text="@string/notas_de_transferencia" />
 
     <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/text_input_layout_notes"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:textColorHint="@color/gristexto"
-        app:boxBackgroundMode="filled"
-        app:hintEnabled="false"
+        android:background="@color/white">
         >
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:background="@drawable/background_imput"
+            android:layout_height="120dp"
+            style="@style/TextInputstyle"
             android:fontFamily="@font/jua"
+            android:textColorHint="@color/gristexto"
             android:hint="@string/placeholder_notas_de_transferencia"
-            android:textSize="14sp"
-            />
+            android:textSize="14sp" />
+
     </com.google.android.material.textfield.TextInputLayout>
 
     <Button

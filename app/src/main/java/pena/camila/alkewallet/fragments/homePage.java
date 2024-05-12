@@ -11,6 +11,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.ImageView;
 
 import pena.camila.alkewallet.R;
 
@@ -37,17 +38,23 @@ public class homePage extends Fragment {
 
 
         Button EnviarDinero = view.findViewById(R.id.button_enviar_dinero);
+        Button IngresarDinero = view.findViewById(R.id.btn_ingresar_dinero);
+        ImageView Perfil = view.findViewById(R.id.fotoperfil);
+
 
         EnviarDinero.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.send_money);
         });
 
-
-        Button IngresarDinero = view.findViewById(R.id.btn_ingresar_dinero);
-
-        IngresarDinero.setOnClickListener(v -> {
+           IngresarDinero.setOnClickListener(v -> {
             Navigation.findNavController(v).navigate(R.id.request_money);
         });
+
+
+        Perfil.setOnClickListener(v -> {
+            Navigation.findNavController(v).navigate(R.id.profile_page);
+        });
+
 
     }
 
