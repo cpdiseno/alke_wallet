@@ -27,9 +27,18 @@ android {
         sourceCompatibility = JavaVersion.VERSION_1_8
         targetCompatibility = JavaVersion.VERSION_1_8
     }
+
+
+
     kotlinOptions {
         jvmTarget = "1.8"
     }
+
+    // habilitar viewBinding
+    viewBinding {
+        enable = true
+    }
+
 }
 
 dependencies {
@@ -43,7 +52,15 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
+    
+    //1 Implementar las librerìas necesarias para el proyecto
+    implementation (libs.kotlinx.coroutines.android)
+    implementation (libs.retrofit)
+    implementation (libs.converter.gson)
+    
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
+
+
 }

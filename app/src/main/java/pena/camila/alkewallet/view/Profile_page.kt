@@ -1,34 +1,29 @@
-package pena.camila.alkewallet.fragments;
+package pena.camila.alkewallet.view
 
-import android.os.Bundle;
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import androidx.fragment.app.Fragment
+import pena.camila.alkewallet.R
+import pena.camila.alkewallet.databinding.FragmentProfilePageBinding
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
+class profile_page : Fragment() {
 
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-
-import pena.camila.alkewallet.R;
-
-public class profile_page extends Fragment {
-
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container,
-                             Bundle savedInstanceState) {
+    lateinit var binding: FragmentProfilePageBinding
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_profile_page, container, false);
+        //return inflater.inflate(R.layout.fragment_profile_page, container, false)
+   binding = FragmentProfilePageBinding.inflate(inflater, container, false)
+   return binding.root
     }
 
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (arguments != null) {
         }
     }
-
-
 }

@@ -1,44 +1,48 @@
-package pena.camila.alkewallet.fragments;
+package pena.camila.alkewallet.view
 
-import android.os.Bundle;
-import androidx.fragment.app.Fragment;
-import androidx.navigation.Navigation;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
-import android.widget.ImageView;
+import android.os.Bundle
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import android.widget.Button
+import android.widget.ImageView
+import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation.findNavController
+import pena.camila.alkewallet.R
+import pena.camila.alkewallet.databinding.FragmentSendMoneyBinding
 
-import pena.camila.alkewallet.R;
-
-public class send_money extends Fragment {
-
-    @Override
-    public void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        if (getArguments() != null) {
-
+class send_money : Fragment() {
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        if (arguments != null) {
         }
     }
+    lateinit var binding: FragmentSendMoneyBinding
 
-    @Override
-    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        // Inflate the layout for this fragment...que layout va a mostrar
-        View view = inflater.inflate(R.layout.fragment_send_money, container, false);
+    override fun onCreateView(
+        inflater: LayoutInflater,
+        container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+binding = FragmentSendMoneyBinding.inflate(inflater, container, false)
+        return binding.root
+    }
 
-        //Elementos del diseño que tienen las acciones:
-        ImageView flecha = view.findViewById(R.id.button_volver);
-        Button enviardinero = view.findViewById(R.id.button_ingresar_dinero);
 
-        // Set click listeners, a que pantalla dirigen los botones
-        flecha.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.emptyCase);
-        });
+        override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+            super.onViewCreated(view, savedInstanceState)
 
-        enviardinero.setOnClickListener(v -> {
-            Navigation.findNavController(v).navigate(R.id.homePage);
-        });
+            val flecha = view.findViewById<ImageView>(R.id.button_volver)
+            flecha.setOnClickListener { v: View? ->
+                findNavController(
+                    v!!
+                ).navigate(R.id.emptyCase) }
 
-        return view; // Return the inflated view
+            val enviardinero = view.findViewById<Button>(R.id.button_ingresar_dinero)
+            enviardinero.setOnClickListener { v: View? ->
+                findNavController(
+                    v!!
+                ).navigate(R.id.homePage)
+            }
     }
 }

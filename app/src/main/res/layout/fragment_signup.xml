@@ -50,6 +50,7 @@
             android:textColorHint="@color/gristexto">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/nombreIngresado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
@@ -81,6 +82,7 @@
             android:textColorHint="@color/gristexto">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/apellidoIngresado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
@@ -110,7 +112,7 @@
             android:background="@color/white">
 
             <com.google.android.material.textfield.TextInputEditText
-
+                android:id="@+id/emailIngresado"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
@@ -144,6 +146,7 @@
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+              android:id="@+id/contrasenaIngresada"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
@@ -163,7 +166,7 @@
             android:fontFamily="@font/jua" />
 
         <com.google.android.material.textfield.TextInputLayout
-            android:id="@+id/form_reingresar_contrasena"
+            android:id="@+id/textInputLayout_reingresar_contrasena"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView"
             android:background="@color/white"
@@ -176,6 +179,7 @@
             app:endIconMode="password_toggle">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/reingresarcontrasena"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:fontFamily="@font/jua"
@@ -185,7 +189,7 @@
 
 
         <Button
-            android:id="@+id/btn_crearcuenta"
+            android:id="@+id/btnCrearcuenta"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="40dp"
